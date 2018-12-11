@@ -5,8 +5,9 @@ var twilio = require('twilio');
 var client = new twilio(accountSid, authToken);
 
 client.messages.create({
-    body: 'Hello from my Twilio Training phone number <3 Obinna',
+    // messagingServiceSid: '',  // can use this if texting a messaging service pool (insted of from)
+    from: '+15103984221' // From a valid Twilio number || or SID
     to: '+19169697723',  // Obinnas  number
-    from: '+15103984221' // From a valid Twilio number
+    body: 'Hello from my Twilio Training phone number <3 Obinna',
 })
 .then((message) => console.log(message.sid));

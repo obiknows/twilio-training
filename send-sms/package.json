@@ -4,6 +4,8 @@
   "main": "send-sms.js",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
     "twilio": "^3.25.0"
   }
 }
