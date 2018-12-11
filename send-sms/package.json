@@ -1,0 +1,9 @@
+{
+  "name": "send-sms",
+  "version": "1.0.0",
+  "main": "send-sms.js",
+  "license": "MIT",
+  "dependencies": {
+    "twilio": "^3.25.0"
+  }
+}
